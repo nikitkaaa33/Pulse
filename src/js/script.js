@@ -27,9 +27,9 @@ $(document).ready(function(){
                 e.preventDefault();
                 $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
                 $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-            })
+            });
         });
-    };
+    }
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
@@ -58,7 +58,7 @@ $(document).ready(function(){
                 name: "required",
                 phone: "required",
                 email: {
-                    reauired: true,
+                    required: true,
                     email:true
                 }
             },
@@ -66,7 +66,7 @@ $(document).ready(function(){
                 name: "Пожалуйста, введите своё имя",
                 phone: "Пожалуйста, введите свой телефон",
                 email: {
-                    reauired: "Пожалуйста, введите свой почтовый адресс",
+                    required: "Пожалуйста, введите свой почтовый адресс",
                     email: "Неправильно введён адресс почты"
                 }
             }
